@@ -1,8 +1,8 @@
-# Variables
-CLUSTER_NAME=vprofile-eks-cluster
-REGION=us-east-2
+#!/bin/bash 
+CLUSTER_NAME=vpro-eks-cluster
+REGION=us-west-1
 NODE_NAME=Linux-nodes
-KEY_NAME=vprofile-eks-key
+KEY_NAME=eks
 
 # Set AWS credentials before script execution
 
@@ -14,7 +14,7 @@ then
   # Creation of EKS cluster
   eksctl create cluster \
   --name $CLUSTER_NAME \
-  --version 1.17 \
+  --version 1.23 \
   --region $REGION \
   --nodegroup-name $NODE_NAME \
   --nodes 2 \
