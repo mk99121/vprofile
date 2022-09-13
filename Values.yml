@@ -4,7 +4,7 @@ deployment:
 service:
   port: 8080
   targetPort: 80
-  name: httpd-lb
+  name: httpd-Lb
 config-map:
 uid: 
 VolumeMounts:

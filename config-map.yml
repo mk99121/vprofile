@@ -16,6 +16,6 @@ data:
 kind: ConfigMap
 metadata:
   creationTimestamp: "2022-09-13T00:00:00Z"
-  name: httpd-index-cm
+  name: httpd-cm
   namespace: 
   resourceVersion: "15525"
