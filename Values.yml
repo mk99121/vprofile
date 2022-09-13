@@ -1,0 +1,11 @@
+deployment:
+  replicaCount: 2
+  name: httpd:latest
+service:
+  port: 8080
+  targetPort: 80
+  name: httpd-Lb
+config-map:
+uid: 
+VolumeMounts:
+ mountpaths: /usr/share/nginx/html/index.html
