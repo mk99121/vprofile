@@ -1,0 +1,21 @@
+apiVersion: v1
+data:
+  index.html: |+
+    <!DOCTYPE html>
+    <html>
+    <body>
+
+    <h1>My Hello world</h1>
+
+    <p>My first paragraph.</p>
+
+    </body>
+    </html>
+
+
+kind: ConfigMap
+metadata:
+  creationTimestamp: "2022-09-13T00:00:00Z"
+  name: httpd-index-cm
+  namespace: 
+  resourceVersion: "15525"
